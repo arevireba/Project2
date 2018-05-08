@@ -1,8 +1,8 @@
 // Establish npm packages
 var express = require("express");
 var bodyParser = require("body-parser");
+const exphbs = require("express-handlebars");
 var path = require("path");
-var newFriend;
 
 // Sets up the Express App and define the port
 var app = express();
@@ -14,12 +14,21 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
-app.use(express.static(__dirname + "/public"));
+app.engine(
+  ".hbs",
+  exphbs({
+    defaultLayout: "main",
+    extname: ".hbs"
+  })
+);
+app.set("view engine", ".hbs");
 
-require("./app/routing/apiRoutes")(app);
-require("./app/routing/htmlRoutes")(app);
+app.use(express.static("public"));
+
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
 
 // Starts the server to begin listening
 app.listen(PORT, function() {
-    console.log("App listening on PORT " + PORT);
+  console.log("App listening on PORT " + PORT);
 });

@@ -1,0 +1,93 @@
+<!-- Top of the page -->
+<nav>
+  <div class="nav-wrapper blue lighten-1">
+    <a href="/" class="brand-logo center">Computer Finder</a>
+    <ul class="left hide-on-med-and-down">
+      <li class="active">
+        <a href="/">Survey</a>
+      </li>
+
+      <!-- <li><a href="/searchagain">Search Again</a></li> -->
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="col s12 center-align title">
+    <div class="row">
+      <h1>
+        <strong>Welcome to Computer Finder</strong>
+      </h1>
+      <h3>Answer a few questions to find the computer that will work best for you!</h3>
+    </div>
+  </div>
+  <div class="row">
+    <form id="computer-form">
+      <!--
+            <div class="input-field col s6 offset-s3">
+                <i class="material-icons prefix btn btn-floating red pulse">account_circle</i>
+                <input id="icon_prefix_name" type="text" class="validate" placeholder=" Please enter your first name">
+            </div>
+        </div>
+    -->
+      <!-- These are all the questions and choices -->
+      <label>
+        <h5 class="questions">Question # 1: What will this computer be primarily used for?</h5>
+      </label>
+      <select class="browser-default" id="q1" required>
+        <option value="" disabled selected>Pick One</option>
+        <option value="1">1 - Surfing the Internet</option>
+        <option value="2">2 - Work or School</option>
+        <option value="3">3 - Gaming</option>
+      </select>
+
+      <label>
+        <h5 class="questions">Question # 2: What price range do you have for this computer?</h5>
+      </label>
+      <select class="browser-default" id="q2" required>
+        <option value="" disabled selected>Pick One</option>
+        <option value="1">1 - Less than $1,000</option>
+        <option value="2">2 - $1,000-$2,000</option>
+        <option value="3">3 - More than $2,000</option>
+      </select>
+
+      <label>
+        <h5 class="questions">Question # 3: Minimum Hard Drive requirement:</h5>
+      </label>
+      <select class="browser-default" id="q3" required>
+        <option value="" disabled selected>Pick One</option>
+        <option value="1">1 - Less than 256GB</option>
+        <option value="2">2 - 256GB - 500GB</option>
+        <option value="3">3 - Over 500GB</option>
+      </select>
+
+      <label>
+        <h5 class="questions">Question # 4: Which Operating System would you prefer to use?</h5>
+      </label>
+      <select class="browser-default" id="q4" required>
+        <option value="" disabled selected>Pick One</option>
+        <option value="1">1 - Chrome OS</option>
+        <option value="2">2 - Windows OS</option>
+        <option value="3">3 - Mac OS</option>
+      </select>
+
+      <!-- This is the submit button at the end of the questions -->
+      <br>
+      <br>
+      <div class="row center-align">
+        <button class="btn-large blue lighten-1" id="submit1" type="submit" name="action">Submit
+          <i class="material-icons right">send</i>
+          <i class="material-icons left">send</i>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Footer info at the bottom of the page -->
+  <footer class="page-footer blue lighten-1">
+    <div class="&copy; 2018">
+      <div class="container">
+      </div>
+    </div>
+</div>
+</footer>
