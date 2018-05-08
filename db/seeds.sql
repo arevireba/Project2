@@ -1,22 +1,3 @@
-DROP DATABASE IF EXISTS Computers;
-
-CREATE DATABASE Computers;
-
-USE Computers;
-
-CREATE TABLE all_Computers (
-	id INT AUTO_INCREMENT NOT NULL,
-	computer_name VARCHAR(100) NOT NULL,
-    computer_photo VARCHAR(100) NOT NULL,
-    computer_q1 INTEGER(1), 
-    computer_q2 INTEGER(1), 
-    computer_q3 INTEGER(1), 
-    computer_q4 INTEGER(1), 
-    computer_specs VARCHAR (255),
-    computer_website VARCHAR (255),
-	PRIMARY KEY (id)
-
-);
 
 INSERT INTO all_Computers (computer_name, computer_photo, computer_q1, computer_q2, computer_q3, computer_q4, computer_specs, computer_website)
 	VALUES ("HP Envy 7500U", "../data/images/HPEnvy7500U.png", "2", "1", "3", "2", "$849.00, Windows 10 OS, 2 TB HDD, 17.3 inch 1600 x 900 display, 2.8 GHz i7 processor, 12 GB memory, 3 USB ports", "https://store.hp.com/us/en/mdp/envy-17-344517--1");

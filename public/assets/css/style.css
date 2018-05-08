@@ -1,10 +1,7 @@
-
 body {
   background-color: rgb(231, 241, 250);
-  background-image: url("/images/background.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-
 }
 .jumbotron {
 
