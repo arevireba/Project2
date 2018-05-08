@@ -1,18 +1,26 @@
 body {
-background-color: rgb(177, 209, 209);
-
+    background-image: url("/images/background.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+body {
+  background-color: rgb(231, 241, 250);
+  background-image: url("/images/background.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 
 }
 .jumbotron {
 
-    background-color: rgb(177, 209, 209);
+    background-color: rgb(231, 241, 250)
+    
 }
 img {
     align-self: auto;
     float: left;
-
-
 }
-
+.page-footer{
+    height: 35px;
+}
 
 
