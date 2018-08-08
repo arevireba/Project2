@@ -8,10 +8,10 @@ body {
     background-color: rgb(231, 241, 250)
     
 }
-img {
+/*img {
     align-self: auto;
     float: left;
-}
+}*/
 .page-footer{
     height: 35px;
 }
